@@ -25,7 +25,7 @@ public class carmovment : MonoBehaviour
 
         // s = u t     s- distance = u (velocity) * t (time)
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             transform.position += currentspeed * transform.forward * Time.deltaTime;
 
@@ -33,7 +33,7 @@ public class carmovment : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(Vector3.up, -90 * Time.deltaTime);
 
@@ -43,7 +43,7 @@ public class carmovment : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
             transform.Rotate(Vector3.up, 90 * Time.deltaTime);
 
@@ -52,7 +52,7 @@ public class carmovment : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             transform.position -= currentspeed * transform.forward * Time.deltaTime;
 
@@ -60,7 +60,7 @@ public class carmovment : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             transform.position += fastdriving * transform.forward * Time.deltaTime;
 
